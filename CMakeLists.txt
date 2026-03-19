@@ -31,7 +31,7 @@ FetchContent_MakeAvailable(nanoflann)
 if(SC_BUILD_PYTHON_BINDING)  
   FetchContent_Declare(pybind11
     GIT_REPOSITORY https://github.com/pybind/pybind11
-    GIT_TAG        v2.9.2
+    GIT_TAG        v2.13.6
   )
   FetchContent_MakeAvailable(pybind11)
 endif()
