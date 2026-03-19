@@ -264,7 +264,7 @@ std::tuple<int, double, double> SCManager::detectLoopClosureID ( void )
 
     nanoflann::KNNResultSet<float> knnsearch_result( NUM_CANDIDATES_FROM_TREE );
     knnsearch_result.init( &candidate_indexes[0], &out_dists_sqr[0] );
-    polarcontext_tree_->index->findNeighbors( knnsearch_result, &curr_key[0] /* query */, nanoflann::SearchParams(10) ); 
+    polarcontext_tree_->index->findNeighbors( knnsearch_result, &curr_key[0] /* query */, nanoflann::SearchParameters(10) );
 
     // step 2: pairwise distance (find optimal columnwise best-fit using cosine distance)
     for ( int candidate_iter_idx = 0; candidate_iter_idx < NUM_CANDIDATES_FROM_TREE; candidate_iter_idx++ )

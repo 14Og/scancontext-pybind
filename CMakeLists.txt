@@ -24,7 +24,7 @@ find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
 FetchContent_Declare(nanoflann
   GIT_REPOSITORY https://github.com/jlblancoc/nanoflann
-  GIT_TAG        v1.4.2
+  GIT_TAG        v1.5.5
 )
 FetchContent_MakeAvailable(nanoflann)
 
